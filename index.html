@@ -3,46 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AirWeatherHelper</title>
+  <title>AirWeatherHelper 官方網站</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(to bottom right, #f9fbfd, #e6eef7);
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #f9f9f9, #e6f2ff);
-      color: #333;
       text-align: center;
+      color: #333;
     }
     header {
-      padding: 50px 20px 20px;
+      padding: 40px 20px 20px;
     }
     h1 {
-      font-size: 2.2em;
-      color: #0066cc;
+      color: #007aff;
       margin-bottom: 10px;
     }
     p {
-      font-size: 1.1em;
       color: #555;
+      font-size: 1.1em;
+      margin-bottom: 30px;
     }
-    .links {
-      margin-top: 40px;
+    .buttons {
+      margin: 20px;
     }
-    a {
+    .buttons a {
       display: inline-block;
       margin: 10px;
       padding: 12px 20px;
-      background: #0066cc;
+      background: #007aff;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.2s;
     }
-    a:hover {
-      background: #004999;
+    .buttons a:hover {
+      background: #005fcc;
+    }
+    .contact {
+      margin-top: 30px;
+      font-size: 1em;
+      color: #444;
+    }
+    .contact a {
+      color: #007aff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .download {
+      margin-top: 40px;
+    }
+    .download a {
+      text-decoration: none;
+    }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      background: #007aff;
+      color: white;
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .download-btn img {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      margin-right: 12px;
     }
     footer {
       margin-top: 60px;
+      padding: 20px;
       font-size: 0.9em;
       color: #888;
     }
@@ -54,13 +88,30 @@
     <p>即時掌握天氣與空氣品質，讓生活更安心。</p>
   </header>
 
-  <div class="links">
-    <a href="https://ezio1983.github.io/airweather-privacy/">隱私權政策</a>
-    <a href="https://ezio1983.github.io/app-ads.txt">app-ads.txt</a>
+  <!-- 功能按鈕 -->
+  <div class="buttons">
+    <a href="privacy.html">隱私權政策</a>
+    <a href="app-ads.txt">app-ads.txt</a>
+  </div>
+
+  <!-- 聯絡方式 -->
+  <div class="contact">
+    <p>如有任何問題，請聯繫我們：</p>
+    <p>📧 <a href="mailto:airweatherapp@gmail.com">airweatherapp@gmail.com</a></p>
+  </div>
+
+  <!-- App Store 下載 -->
+  <div class="download">
+    <a href="https://apps.apple.com/tw/app/airweatherhelper/id6751576773" target="_blank">
+      <div class="download-btn">
+        <img src="icon.png" alt="App Icon">
+        <span>在 App Store 下載</span>
+      </div>
+    </a>
   </div>
 
   <footer>
-    <p>© 2025 AirWeatherHelper. All Rights Reserved.</p>
+    © 2025 AirWeatherHelper. All Rights Reserved.
   </footer>
 </body>
 </html>
