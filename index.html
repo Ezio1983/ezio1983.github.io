@@ -3,115 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AirWeatherHelper 官方網站</title>
+  <title>AirWeatherHelper</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: linear-gradient(to bottom right, #f9fbfd, #e6eef7);
-      margin: 0;
-      padding: 0;
+      background: linear-gradient(180deg, #f8fbff, #eef3f9);
       text-align: center;
+      padding: 40px 20px;
       color: #333;
     }
-    header {
-      padding: 40px 20px 20px;
+    .icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 24px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* 陰影效果 */
+      margin: 0 auto 20px;
+      display: block;
     }
     h1 {
-      color: #007aff;
+      font-size: 2em;
       margin-bottom: 10px;
+      color: #005bbb;
     }
-    p {
-      color: #555;
-      font-size: 1.1em;
+    p.tagline {
       margin-bottom: 30px;
+      font-size: 1.1em;
+      color: #444;
     }
-    .buttons {
-      margin: 20px;
+    .actions {
+      margin: 20px 0;
     }
-    .buttons a {
+    .btn {
       display: inline-block;
-      margin: 10px;
+      margin: 8px;
       padding: 12px 20px;
-      background: #007aff;
-      color: white;
+      font-size: 16px;
       text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: background 0.2s;
+      border-radius: 8px;
+      background: #007bff;
+      color: white;
+      transition: all 0.2s ease;
     }
-    .buttons a:hover {
-      background: #005fcc;
+    .btn:hover {
+      background: #0056b3;
+    }
+    .btn.primary {
+      background: #005bbb;
+      font-weight: bold;
+    }
+    .btn.primary:hover {
+      background: #004499;
     }
     .contact {
       margin-top: 30px;
-      font-size: 1em;
+      font-size: 0.95em;
       color: #444;
     }
     .contact a {
-      color: #007aff;
+      color: #005bbb;
       text-decoration: none;
-      font-weight: bold;
-    }
-    .download {
-      margin-top: 40px;
-    }
-    .download a {
-      text-decoration: none;
-    }
-    .download-btn {
-      display: inline-flex;
-      align-items: center;
-      background: #007aff;
-      color: white;
-      padding: 14px 22px;
-      border-radius: 12px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-    .download-btn img {
-      width: 44px;
-      height: 44px;
-      border-radius: 8px;
-      margin-right: 12px;
+      font-weight: 500;
     }
     footer {
-      margin-top: 60px;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #888;
+      margin-top: 40px;
+      font-size: 0.8em;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>AirWeatherHelper</h1>
-    <p>即時掌握天氣與空氣品質，讓生活更安心。</p>
-  </header>
 
-  <!-- 功能按鈕 -->
-  <div class="buttons">
-    <a href="privacy.html">隱私權政策</a>
-    <a href="app-ads.txt">app-ads.txt</a>
+  <!-- App Icon -->
+  <img src="icon.png" alt="App Icon" class="icon">
+
+  <h1>AirWeatherHelper</h1>
+  <p class="tagline">即時掌握天氣與空氣品質，讓生活更安心。</p>
+
+  <div class="actions">
+    <a class="btn" href="https://ezio1983.github.io/airweather-privacy/" target="_blank" rel="noopener">隱私權政策</a>
+    <a class="btn" href="/app-ads.txt" target="_blank" rel="noopener">app-ads.txt</a>
+    <a class="btn primary" href="https://apps.apple.com/tw/app/airweatherhelper/id6751576773" target="_blank" rel="noopener">在 App Store 下載</a>
   </div>
 
-  <!-- 聯絡方式 -->
-  <div class="contact">
-    <p>如有任何問題，請聯繫我們：</p>
-    <p>📧 <a href="mailto:airweatherapp@gmail.com">airweatherapp@gmail.com</a></p>
-  </div>
-
-  <!-- App Store 下載 -->
-  <div class="download">
-    <a href="https://apps.apple.com/tw/app/airweatherhelper/id6751576773" target="_blank">
-      <div class="download-btn">
-        <img src="icon.png" alt="App Icon">
-        <span>在 App Store 下載</span>
-      </div>
-    </a>
-  </div>
+  <p class="contact">
+    如有任何問題，請聯繫我們：<br>
+    📧 <a href="mailto:airweatherapp@gmail.com">airweatherapp@gmail.com</a>
+  </p>
 
   <footer>
     © 2025 AirWeatherHelper. All Rights Reserved.
   </footer>
+
 </body>
 </html>
