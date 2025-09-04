@@ -3,84 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AirWeatherHelper</title>
+  <title>AirWeatherHelper - 即時天氣與空氣品質小幫手</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="AirWeatherHelper 提供即時天氣與空氣品質 (AQI) 資訊，讓生活更安心。支援 Widget、簡潔設計與即時更新。">
+  <meta name="keywords" content="AirWeatherHelper, 天氣, AQI, 空氣品質, iOS App, Widget, 即時天氣, 健康生活">
+  <meta name="author" content="AirWeatherHelper Team">
+
+  <!-- Open Graph (FB, LINE, etc.) -->
+  <meta property="og:title" content="AirWeatherHelper - 即時天氣與空氣品質小幫手">
+  <meta property="og:description" content="即時掌握天氣與空氣品質 (AQI)，支援 Widget，設計簡潔實用。">
+  <meta property="og:image" content="https://ezio1983.github.io/icon.png">
+  <meta property="og:url" content="https://ezio1983.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AirWeatherHelper - 即時天氣與空氣品質小幫手">
+  <meta name="twitter:description" content="即時掌握天氣與空氣品質 (AQI)，支援 Widget，設計簡潔實用。">
+  <meta name="twitter:image" content="https://ezio1983.github.io/icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="icon.png">
+  
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #ffffff; /* 純白背景 */
       margin: 0;
       padding: 0;
+      background: #ffffff; /* 純白背景 */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      text-align: center;
+      color: #333;
     }
     .container {
-      margin-top: 50px;
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 20px;
     }
-    .icon {
+    img.icon {
       width: 120px;
       height: 120px;
+      border-radius: 22px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
       margin-bottom: 20px;
-      border-radius: 20px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.25); /* icon 陰影 */
     }
     h1 {
-      color: #007BFF;
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #0070f3;
     }
     p {
-      font-size: 16px;
-      color: #333;
+      font-size: 1.1em;
+      margin-bottom: 25px;
     }
-    .actions {
-      margin: 25px 0;
-    }
-    .btn {
+    .buttons a {
       display: inline-block;
-      margin: 0 10px;
-      padding: 10px 20px;
-      background: #007BFF;
-      color: white;
+      margin: 6px;
+      padding: 10px 18px;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      transition: background 0.3s;
+      font-weight: 500;
+      background: #0070f3;
+      color: #fff;
+      transition: background 0.2s;
     }
-    .btn:hover {
-      background: #0056b3;
+    .buttons a:hover {
+      background: #0059c9;
     }
     .contact {
-      margin-top: 20px;
-      font-size: 15px;
-      color: #333;
+      margin-top: 25px;
+      font-size: 0.95em;
+    }
+    .contact a {
+      color: #0070f3;
+      text-decoration: none;
     }
     footer {
       margin-top: 40px;
-      font-size: 14px;
-      color: #555;
+      font-size: 0.8em;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- App Icon -->
-    <img src="icon.png" alt="App Icon" class="icon">
-
-    <!-- 標題 -->
+    <img src="icon.png" alt="AirWeatherHelper App Icon" class="icon">
     <h1>AirWeatherHelper</h1>
     <p>即時掌握天氣與空氣品質，讓生活更安心。</p>
 
-    <!-- 按鈕 -->
-    <div class="actions">
-      <a class="btn" href="https://ezio1983.github.io/airweather-privacy/" target="_blank" rel="noopener">隱私權政策</a>
-      <a class="btn" href="https://apps.apple.com/tw/app/airweatherhelper/id6751576773" target="_blank" rel="noopener">在 App Store 下載</a>
+    <div class="buttons">
+      <a href="https://ezio1983.github.io/airweather-privacy/" target="_blank">隱私權政策</a>
+      <a href="https://apps.apple.com/tw/app/airweatherhelper/id6751576773" target="_blank">在 App Store 下載</a>
     </div>
 
-    <!-- 聯絡方式 -->
     <div class="contact">
       如有任何問題，請聯繫我們：<br>
       📧 <a href="mailto:airweatherapp@gmail.com">airweatherapp@gmail.com</a>
     </div>
 
-    <!-- 版權 -->
     <footer>
       © 2025 AirWeatherHelper. All Rights Reserved.
     </footer>
