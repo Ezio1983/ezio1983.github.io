@@ -6,93 +6,84 @@
   <title>AirWeatherHelper</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: linear-gradient(180deg, #f8fbff, #eef3f9);
+      font-family: Arial, sans-serif;
       text-align: center;
-      padding: 40px 20px;
-      color: #333;
+      background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      margin-top: 50px;
     }
     .icon {
       width: 120px;
       height: 120px;
-      border-radius: 24px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* 陰影效果 */
-      margin: 0 auto 20px;
-      display: block;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25); /* icon 陰影 */
     }
     h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-      color: #005bbb;
+      color: #007BFF;
     }
-    p.tagline {
-      margin-bottom: 30px;
-      font-size: 1.1em;
-      color: #444;
+    p {
+      font-size: 16px;
+      color: #333;
     }
     .actions {
-      margin: 20px 0;
+      margin: 25px 0;
     }
     .btn {
       display: inline-block;
-      margin: 8px;
-      padding: 12px 20px;
-      font-size: 16px;
-      text-decoration: none;
-      border-radius: 8px;
-      background: #007bff;
+      margin: 0 10px;
+      padding: 10px 20px;
+      background: #007BFF;  /* 統一藍色 */
       color: white;
-      transition: all 0.2s ease;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: background 0.3s;
     }
     .btn:hover {
       background: #0056b3;
     }
-    .btn.primary {
-      background: #005bbb;
-      font-weight: bold;
-    }
-    .btn.primary:hover {
-      background: #004499;
-    }
     .contact {
-      margin-top: 30px;
-      font-size: 0.95em;
-      color: #444;
-    }
-    .contact a {
-      color: #005bbb;
-      text-decoration: none;
-      font-weight: 500;
+      margin-top: 20px;
+      font-size: 15px;
+      color: #333;
     }
     footer {
       margin-top: 40px;
-      font-size: 0.8em;
-      color: #777;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <!-- App Icon -->
+    <img src="icon.png" alt="App Icon" class="icon">
 
-  <!-- App Icon -->
-  <img src="icon.png" alt="App Icon" class="icon">
+    <!-- 標題 -->
+    <h1>AirWeatherHelper</h1>
+    <p>即時掌握天氣與空氣品質，讓生活更安心。</p>
 
-  <h1>AirWeatherHelper</h1>
-  <p class="tagline">即時掌握天氣與空氣品質，讓生活更安心。</p>
+    <!-- 按鈕 -->
+    <div class="actions">
+      <a class="btn" href="https://ezio1983.github.io/airweather-privacy/" target="_blank" rel="noopener">隱私權政策</a>
+      <a class="btn" href="https://apps.apple.com/tw/app/airweatherhelper/id6751576773" target="_blank" rel="noopener">在 App Store 下載</a>
+    </div>
 
-  <div class="actions">
-    <a class="btn" href="https://ezio1983.github.io/airweather-privacy/" target="_blank" rel="noopener">隱私權政策</a>
-    <a class="btn" href="/app-ads.txt" target="_blank" rel="noopener">app-ads.txt</a>
-    <a class="btn primary" href="https://apps.apple.com/tw/app/airweatherhelper/id6751576773" target="_blank" rel="noopener">在 App Store 下載</a>
+    <!-- 聯絡方式 -->
+    <div class="contact">
+      如有任何問題，請聯繫我們：<br>
+      📧 <a href="mailto:airweatherapp@gmail.com">airweatherapp@gmail.com</a>
+    </div>
+
+    <!-- 版權 -->
+    <footer>
+      © 2025 AirWeatherHelper. All Rights Reserved.
+    </footer>
   </div>
-
-  <p class="contact">
-    如有任何問題，請聯繫我們：<br>
-    📧 <a href="mailto:airweatherapp@gmail.com">airweatherapp@gmail.com</a>
-  </p>
-
-  <footer>
-    © 2025 AirWeatherHelper. All Rights Reserved.
-  </footer>
-
 </body>
 </html>
